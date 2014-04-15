@@ -13,6 +13,7 @@ Put the following snippet in `.repo/local_manifests/c6503.xml`
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+<remote  name="sony" fetch="git://github.com/sonyxperiadev/" />
 <remote  name="zcop" fetch="git://github.com/zcop/" />
 
 <remove-project name="platform/hardware/qcom/display" />
@@ -26,6 +27,8 @@ Put the following snippet in `.repo/local_manifests/c6503.xml`
 
 <project path="device/sony/lagan" name="device_sony_lagan" groups="device" remote="zcop" revision="android-4.3.1_r1" />
 <project path="device/sony/c6503" name="device_sony_c6503" groups="device" remote="zcop" revision="android-4.3.1_r1" />
+<project path="vendor/sony/c6503" name="vendor_sony_c6503" groups="device" remote="zcop" revision="android-4.3.1_r1" />
+<project path="vendor/sony/lagan" name="vendor_sony_lagan" groups="device" remote="zcop" revision="android-4.3.1_r1" />
 <project path="vendor/sony/dash" name="DASH" groups="device" revision="master" remote="sony" />
 </manifest>
 ```
